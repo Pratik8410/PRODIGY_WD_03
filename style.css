@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #8980F5;
+    text-align: center;
+}
+h1{
+    margin-top: 20px;
+    font-size: auto;
+}
+.container{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.game{
+    height: 60vh;
+    width: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.7vh;
+}
+.box{
+    height: 15vh;
+    width: 15vh;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+    font-size: 8vh;
+    background-color: #EEF8FF;
+    color: #F07167;
+    font-weight: 800;
+}
+
+#reset-btn{
+    padding: 1rem;
+    font-size: 1.2rem;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+#new-btn{
+    padding: 1rem;
+    font-size: 1.2rem;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#msg{
+    color: rgb(188, 63, 63);
+    font-size: 6vh;
+}
+.msg-container{
+    height:100vh;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: #95D9C3;
+    font-weight: 600;
+    font-size:15vh;
+}
+.hide{
+     display: none; 
+}
+@media screen and (max-width:425px) {
+    .game{
+        height: 50vh;
+        width: 50vh !important;
+    }
+    .box{
+        height: 12vh;
+        width: 12vh;
+        font-size: 5vh;
+    }
+    .msg-container{
+        height:100vh;
+        font-size:8vh;
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        background-color: #95D9C3;
+    }
+    #msg{
+        font-size: 5vh;
+    }
+    .hide{
+        display: none;
+    }
+   
+    
+}
